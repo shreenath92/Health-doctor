@@ -18,7 +18,7 @@ def load_model():
 
 @st.cache_resource
 def load_encoders():
-    return joblib.load('label_encoders.pkl')
+    return joblib.load('assign/label_encoders.pkl')
 
 @st.cache_data
 def load_data():
