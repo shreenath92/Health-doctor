@@ -14,7 +14,7 @@ st.set_page_config(
 # --- Load trained model and encoders ---
 @st.cache_resource
 def load_model():
-    return joblib.load('label_encoders.pkl')
+    return joblib.load('random_forest_model.pkl')
 
 @st.cache_resource
 def load_encoders():
