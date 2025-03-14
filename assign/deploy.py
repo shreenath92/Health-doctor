@@ -22,7 +22,7 @@ def load_encoders():
 
 @st.cache_data
 def load_data():
-    df=pd.read_csv('dummy_npi_data.xlsx - Dataset.csv')
+    df=pd.read_csv('assign/dummy_npi_data.xlsx - Dataset.csv')
     st.write(df.head())
     return df
 
