@@ -14,15 +14,15 @@ st.set_page_config(
 # --- Load trained model and encoders ---
 @st.cache_resource
 def load_model():
-    return joblib.load('assign/label_encoders.pkl')
+    return joblib.load('label_encoders.pkl')
 
 @st.cache_resource
 def load_encoders():
-    return joblib.load('assign/label_encoders.pkl')
+    return joblib.load('label_encoders.pkl')
 
 @st.cache_data
 def load_data():
-    df=pd.read_csv('assign/dummy_npi_data.xlsx - Dataset.csv')
+    df=pd.read_csv('dummy_npi_data.xlsx - Dataset.csv')
     st.write(df.head())
     return df
 
