@@ -22,7 +22,7 @@ def load_encoders():
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('dummy_npi_data.xlsx - Dataset.csv')
+    return pd.read_csv('assign/dummy_npi_data.xlsx - Dataset.csv')
 
 model = load_model()
 label_encoders = load_encoders()
